@@ -19,6 +19,7 @@ class AnimalsController < ApplicationController
        render 'new'
     end
   end
+
   def edit
     @animal = Animal.find(params[:id])
   end
@@ -40,5 +41,4 @@ class AnimalsController < ApplicationController
 
     redirect_to animals_path
   end
-
 end
