@@ -1,7 +1,13 @@
 <h1>Animals</h1>
 
 <% @animals.each do |animal| %>
+<ul><li>
 <p><%= link_to animal.name, animal_path(animal.id) %></p>
+</li></ul>
+
 <%end%>
+
+<br></br>
+
 <hr>
 <%= link_to "[New Animal]" , new_animal_path %>
