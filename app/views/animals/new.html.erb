@@ -1,0 +1,17 @@
+<h1>New Animal</h1>
+
+<%= form_for @animal do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :food %>
+  <%= f.text_field :food %>
+
+  <%= f.label :image_url %>
+  <%= f.text_field :image_url %>
+
+  <%= f.label :artiszoo_id %>
+  <%= f.text_field :artiszoo_id %>
+
+  <%= f.submit "Create" %>
+<% end %>

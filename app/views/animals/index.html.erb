@@ -3,3 +3,5 @@
 <% @animals.each do |animal| %>
 <p><%= link_to animal.name, animal_path(animal.id) %></p>
 <%end%>
+<hr>
+<%= link_to "[New Animal]" , new_animal_path %>
