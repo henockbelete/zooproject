@@ -2,3 +2,6 @@
 
 <p>Food: <%= @animal.food %></p>
 <%= image_tag @animal.image_url %>
+<hr>
+<%= link_to "[Edit]", edit_animal_path(@animal.id) %>
+<%= link_to "[Delete]", animal_path(@animal.id) ,method: :delete,data: { confirm: "Are you sure? "}%>
