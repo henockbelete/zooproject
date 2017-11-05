@@ -1,5 +1,5 @@
 <h1>Artiszoo</h1>
 
-<% @artiszoo.each do |artiszoo| %>
-  <p><%= artiszoo.department %></p>
+<% @artiszoos.each do |artiszoo| %>
+  <p><%= link_to artiszoo.department, artiszoo_path(artiszoo.id) %></p>
 <% end %>

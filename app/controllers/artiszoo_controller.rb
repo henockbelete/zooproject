@@ -1,7 +1,7 @@
 class ArtiszooController < ApplicationController
 
   def index
-   @artiszoo = Artiszoo.all
+   @artiszoos = Artiszoo.all
   end
 
   def show
